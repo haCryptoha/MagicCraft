@@ -1,1 +1,1 @@
-# Magicraft-Marketplace-Staking-Client
+# MagicCraft_Staking
