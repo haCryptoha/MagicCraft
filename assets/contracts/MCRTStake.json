@@ -1,5 +1,5 @@
 {
-    "contract": "0xf8a8Bbb719DE06F87B0BAD43DD07121E3665e7E8",
+    "contract": "0x67465858Ab049773e2Ff8D2f7f337C492fdaB97a",
 	"abi": [
 		{
 			"inputs": [
@@ -167,18 +167,7 @@
 			"type": "event"
 		},
 		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "tokens",
-					"type": "uint256"
-				},
-				{
-					"internalType": "uint8",
-					"name": "option",
-					"type": "uint8"
-				}
-			],
+			"inputs": [],
 			"name": "ADDFUNDS",
 			"outputs": [],
 			"stateMutability": "nonpayable",
@@ -332,6 +321,51 @@
 			"name": "WithdrawForStakingPerPeriod",
 			"outputs": [],
 			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "addfundsForpointReward",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "addfundsFortokenReward",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"name": "apr",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
 			"type": "function"
 		},
 		{
@@ -528,48 +562,48 @@
 			"type": "function"
 		},
 		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"name": "phasedAddedTokensForPoint",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"name": "phasedAddedTokensForStaking",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
 			"inputs": [],
 			"name": "renounceOwnership",
 			"outputs": [],
 			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"name": "rewardTokenPerPeriod",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"name": "rewardTokenPercentage",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
 			"type": "function"
 		},
 		{
@@ -607,6 +641,32 @@
 				}
 			],
 			"name": "setBreaker",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_priceforpointreward",
+					"type": "uint256"
+				}
+			],
+			"name": "setInflationForPointReward",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_pricefortokenreward",
+					"type": "uint256"
+				}
+			],
+			"name": "setInflationForTokenReward",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"

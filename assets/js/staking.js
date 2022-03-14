@@ -26,9 +26,10 @@ with1825btn = $('#with1825btn');
 async function getStakedMCRT(period){
     console.timeLog(accnt,period);
     await stakingContract.methods.yourStakedMCRT(accnt,period).call(function(err, ret) {
-        console.log(period,ret);
 
         if (!err) {
+            console.log(period,ret);
+
             if (period == 30){
                 with30btn.attr("onclick", "withdraw(30)");
                 with30btn.text('Unstake');
@@ -36,6 +37,8 @@ async function getStakedMCRT(period){
                 $('#MCRT30Earned').text(reward.toFixed(4));
                 var stacked = ret[1] / Math.pow(10, 18);
                 $('#Staked30Lpbalancep').text(stacked.toFixed(4));
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr30').text(apr.toFixed(4));
                 var totalStakedMCTR =ret[5] / Math.pow(10, 18);
                 $('#MCRT30StakedT').text(totalStakedMCTR.toFixed(4));
             } else if (period == 90) {
@@ -45,6 +48,8 @@ async function getStakedMCRT(period){
                 $('#MCRT90Earned').text(reward.toFixed(4));
                 var stacked = ret[1] / Math.pow(10, 18);
                 $('#Staked90Lpbalancep').text(stacked.toFixed(4));
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr90').text(apr.toFixed(4));
                 var totalStakedMCTR =ret[5] / Math.pow(10, 18);
                 $('#MCRT90StkaedT').text(totalStakedMCTR.toFixed(4));
             } else if(period == 180 ){
@@ -52,11 +57,14 @@ async function getStakedMCRT(period){
 				var option = select.options[select.selectedIndex].value;
                 with90btn.attr("onclick", "withdraw(90)");
                 with90btn.text('Unstake');
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr180').text(apr.toFixed(4));
                 if (option == "0"){
                     var reward = ret[0] / Math.pow(10, 18);
                     $('#MCRT180Earned').text(reward.toFixed(4));
                     var stacked = ret[1] / Math.pow(10, 18);
                     $('#Staked180Lpbalancep').text(stacked.toFixed(4));
+
                 } else if (option =="1"){
                     var reward = ret[2] / Math.pow(10, 18);
                     $('#MCRT180Earned').text(reward.toFixed(4));
@@ -73,7 +81,8 @@ async function getStakedMCRT(period){
 				var option = select.options[select.selectedIndex].value;
                 with365btn.attr("onclick", "withdraw(365)");
                 with365btn.text('Unstake');
-
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr365').text(apr.toFixed(4));
                 if (option == "0"){
                     var reward= ret[0] / Math.pow(10, 18);
                     $('#MCRT365Earned').text(reward.toFixed(4));
@@ -94,6 +103,8 @@ async function getStakedMCRT(period){
 				var option = select.options[select.selectedIndex].value;
                 with90btn.attr("onclick", "withdraw(1095)");
                 with90btn.text('Unstake');
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr1095').text(apr.toFixed(4));
 
                 if (option == "0"){
                     var reward = ret[0] / Math.pow(10, 18);
@@ -115,6 +126,8 @@ async function getStakedMCRT(period){
 				var option = select.options[select.selectedIndex].value;
                 with90btn.attr("onclick", "withdraw(1825)");
                 with90btn.text('Unstake');
+                var apr = ret[4] / Math.pow(10, 0);
+                $('#apr1825').text(apr.toFixed(4));
 
                 if (option == "0"){
                     var reward = ret[0] / Math.pow(10, 18);
@@ -243,7 +256,7 @@ function staking(period) {
         var select = document.getElementById('option1825');
 		option = select.options[select.selectedIndex].value;
     }
-
+    console.log(accnt,new BigNumber(amnt * Math.pow(10, 18)), period, option);
     if (amnt > 0) {
         stakingContract.methods.STAKE(accnt,new BigNumber(amnt * Math.pow(10, 18)), period, option).send(callee)
             .on('transactionHash', function(hash) {
