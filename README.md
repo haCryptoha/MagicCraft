@@ -1,1 +1,0 @@
-# MagicCraft_Staking
