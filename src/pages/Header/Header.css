@@ -1,0 +1,57 @@
+.activebtn:hover{
+  background-color: #132957 ;
+  height: 65px !important;
+  
+}
+.activebtn:focus{
+  background-color: #132957 ;
+  height: 65px !important;
+  
+}
+
+.bg-header {
+  height: 66px !important;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+      270deg,
+      #030f36 0%,
+      rgba(0, 11, 47, 0.24) 26.54%,
+      rgba(0, 9, 37, 0.21) 30.68%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #44549d 0%,
+      rgba(53, 69, 147, 0.5) 53.05%,
+      #213979 100%
+    );
+}
+
+.btn1 {
+  width: 157px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    89.72deg,
+    #eb14ff 0.22%,
+    #6f90ff 59.87%,
+    #32cdff 99.75%
+  );
+  box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+}
+@media only screen and (max-width: 991px) {
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+background-color: #030f36;
+z-index: 1;
+border-radius: 22px;
+}
+}

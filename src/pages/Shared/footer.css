@@ -1,0 +1,38 @@
+.footer-container {
+  background: #0a0b35;
+  margin: auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-upper-line-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer-brand-color {
+  color: #e5ce0f;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vertical-line-container {
+    display: none;
+  }
+  .right-col{
+    display: flex;
+    flex-direction: column;
+  }
+  .logoimg{
+    margin-left: 40%;
+  }
+}
