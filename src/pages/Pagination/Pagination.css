@@ -1,0 +1,46 @@
+.pgbtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 12px;
+
+width: 48px;
+height: 34px;
+
+background: #0D1A46;
+border: 1px solid #2D2F79;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.btncenter{
+margin: auto;
+
+}
+.cpgbtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 20px;
+
+
+background: #FADD0D;
+border: 1px solid rgba(255, 255, 255, 0.09);
+box-sizing: border-box;
+border-radius: 4px;
+
+
+}
+.subnav1{
+    height: 33px !important;
+    background-color: #132957;
+}
+@media only screen and (max-width: 600px) {
+    .btncenter{
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+    }
+
+}

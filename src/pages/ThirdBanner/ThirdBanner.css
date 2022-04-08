@@ -1,0 +1,64 @@
+.bgbanner {
+  background: url("../../assets/image\ 5.png");
+  background-size: cover;
+}
+.bgcaps {
+  width: 122px !important;
+  height: 65px;
+  background: linear-gradient(180deg, #24849f 0%, #503ba4 54.69%, #8d26db 100%);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.21);
+  border-radius: 6px;
+  clip-path: polygon(
+    0 0,
+    80% 0,
+    100% 32%,
+    100% 70%,
+    100% 100%,
+    20% 100%,
+    0 68%,
+    0% 30%
+  );
+}
+.mintbtn {
+  width: 122px;
+  font-size: 14px;
+  background: linear-gradient(
+    89.78deg,
+    #e9da1b 0.11%,
+    #c1db45 30.8%,
+    #8fdc7b 56.69%,
+    #79dd92 99.76%
+  );
+  box-shadow: -8px 6px 21px #172365, 0px 6px 16px rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+}
+.markbtn {
+  font-size: 14px;
+  
+}
+.banImg {
+  width: 350px;
+}
+.img-slide {
+  width: 400px;
+  padding-bottom: 82px !important;
+  background: #020d32;
+  border: 2px solid rgba(255, 255, 255, 0.26);
+  border-radius: 12px;
+  clip-path: polygon(
+    0 0,
+    90% 0,
+    100% 12%,
+    100% 70%,
+    100% 100%,
+    10% 100%,
+    0 88%,
+    0% 30%
+  );
+}
+@media screen and (min-device-width: 250px) and (max-device-width: 444px) {
+  .img-slide {
+    padding: 6px !important;
+    width: 230px;
+  }
+}

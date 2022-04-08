@@ -1,0 +1,33 @@
+
+.lstDesign{
+position: relative;
+}
+@media only screen and (min-width: 770px) and (max-width: 991px) {
+    .lstDesign{
+      
+        top: 120px !important;
+        
+     
+
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .lstDesign{
+      
+        top: 200px !important;
+        
+     
+
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2200px) {
+    .lstDesign{
+      
+        top: 305px !important;
+        
+     
+
+    }
+}
+
