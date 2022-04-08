@@ -3,10 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@binance-chain/bsc-use-wallet": "^0.8.1",
     "@material-ui/core": "^4.12.3",
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/styled-components": "^5.1.24",
+    "@types/styled-system": "^5.1.15",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "@web3-react/walletlink-connector": "^6.2.13",
     "bignumber.js": "^9.0.2",
     "bootstrap": "^5.1.3",
     "ethers": "^5.6.1",
@@ -16,10 +29,19 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-modal": "^3.14.4",
+    "react-redux": "^7.2.8",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^4.0.0",
     "react-toastify": "^8.2.0",
-    "web-vitals": "^2.1.4"
+    "styled-components": "^5.3.5",
+    "styled-system": "^5.1.5",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.1",
+    "web3-core": "^1.7.1",
+    "web3-core-helpers": "^1.7.1",
+    "web3-eth-contract": "^1.7.1",
+    "web3-utils": "^1.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,6 +54,10 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
   },
   "browserslist": {
     "production": [
@@ -48,6 +74,6 @@
   "devDependencies": {
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
-    "webpack": "^5.70.0"
+    "webpack": "^4.44.2"
   }
 }
