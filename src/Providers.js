@@ -1,11 +1,11 @@
-import React from "react";
-import { Provider } from 'react-redux'
-import { Web3ReactProvider } from '@web3-react/core'
-import { ThemeProvider as SCThemeProvider } from 'styled-components'
-import { ModalProvider } from 'widgets/Modal'
-import { getLibrary } from 'utils/web3React'
-import store from 'state'
-import { light } from 'theme'
+ import React from "react";
+ import { Provider } from 'react-redux'
+ import { Web3ReactProvider } from '@web3-react/core'
+ import { ThemeProvider as SCThemeProvider } from 'styled-components'
+ import { ModalProvider } from 'widgets/Modal'
+ import { getLibrary } from 'utils/web3React'
+ import store from 'state'
+ import { light } from 'theme'
 
 
 const Providers = ({ children }) => {
